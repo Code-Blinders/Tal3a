@@ -1,0 +1,656 @@
+/*
+colors:
+ light purple #616188:
+Dark purple:#41415b
+
+
+border-box is a poroperty that remove the margin or padding to the box of spsefied width and height
+clip-path:polygon :(x,y) corridantes
+*/
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    padding: 30px;
+    font-family: "Loto",sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #d8412c;
+    background-color: #f7f7f7;
+    overflow-y: hidden;
+    overflow: scroll;
+transition: 3s ease;
+
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+header
+{
+    height: 95vh;
+    background-image:linear-gradient(to right bottom,rgba(	196, 196, 255,0.4) ,rgba(	196, 196, 255,0.4)) ,url("../images/hero-slider.jpeg");
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon( 0 0, 100% 0, 100% 75%, 0 100%);
+    position: relative;
+}
+.logo img
+{
+    width: 10%;
+    margin: 1%;
+    animation: moveright 3s ease-in-out;
+}
+.hero-slider-content {
+    position: absolute;
+    /* left: 29%; */
+    /* bottom: 40%; */
+    transform: translate(60%,20%);
+}
+.hero-slider-title h1 {
+    font-size: 35px;
+    font-weight: 400;
+    letter-spacing: 35px;
+    animation: moveright 3s ease-in-out;
+
+}
+
+.hero-slider-intro p {
+    margin: 10px 12px;
+    padding-top: 8%;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 8px;
+    animation: movetop 3s ease-in-out;
+}
+.package-btn {
+    text-transform: uppercase;
+    text-align: center;
+    border: 1px solid #616188;
+    background-color: #616188;
+    border-radius: 35px;
+    width: 350px;
+    padding: 3%;
+    margin: 5% auto;
+    transition: 1s ease-in-out;
+
+}
+.video-section
+{
+    margin-top: 5%;
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+
+.color-overlay {
+    background-image: linear-gradient(to right bottom,rgba( 196, 196, 255,0.2) ,rgba( 196, 196, 255,0.2));
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.package-btn a
+{
+text-decoration: none;
+color: #ffffff;
+}
+
+.package-btn:hover
+{
+    transform: translateY(-4px);
+
+}
+.package-btn:hover
+{
+    background-color: #242d3c;
+}
+#menu-bar {
+    float: right;
+    width: 7%;
+    margin-top: 1%;
+}
+#humrger-btn {
+    background-color: #ffffff;
+    width: 65px;
+    height: 65px;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 5px 0px 0px 6px;
+}
+.bar {
+    height: 3px;
+    width: 90%;
+    background-color: black;
+    display: block;
+    transition: 0.3s ease-in-out;
+}
+.nav
+{
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    display: none;
+}
+.nav li {
+    padding: 18px 0px;
+    text-align: center;
+    animation:  opacityanimation 2s ease-in-out;
+
+}
+
+.nav li a {
+    font-size: 18px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.main-nav
+{
+    position: absolute;
+    left:45%;
+}
+.bar1
+{
+    transform: translateY(-4px);
+}
+.bar3
+{
+    transform: translateY(4px);
+}
+.change
+{
+    display: block;
+}
+.menu-bg
+{
+    width: 0;
+    height: 0;
+    background: radial-gradient(circle,#d8412c,#ee3116 );
+    transition: 0.3s ease-in-out;
+}
+/* #menu-bar ,#menu-bar
+{
+top: 0;
+left: 0;
+position:absoloute;
+} */
+.change-bg
+{
+    width:100%;
+    height: 100%;
+}
+.change .bar
+{
+    height: 4px;
+}
+.change .bar1 {
+    transform: translateY(3px) rotate(-45deg);
+}
+.change  .bar3
+{
+    transform: translateY(-6px) rotate(45deg);
+
+}
+.change  .bar2
+{
+    opacity: 0;
+}
+.tours-introduction
+{
+    height: 500px;
+}
+.tours-introduction {
+    margin: 6%;
+}
+.tours-introduction h1
+{
+    text-align: center;
+font-size: 30px;
+transition: 0.3s ease-in-out;
+}
+.tours-introduction h1:hover
+{
+    transform: rotate(5deg);
+}
+
+.tours-motvation-title h5 {
+    font-weight: bold;
+    color: gray;
+    font-size: 15px;
+    padding: 10px;
+}
+.tours-motvation-desc p {
+    color: gray;
+    padding-left: 2%;
+}
+.tour-content {
+    margin-top: 12%;
+    width: 45%;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.tours-motvation-desc
+{
+    line-height: 30px;
+}
+#second-pargraph
+{
+    padding-top: 25px;
+}
+.learn-more-btn
+{
+    padding-top: 10%;
+    padding-left: 2%;
+}
+.learn-more-btn a:hover
+{
+    background-color:#d8412c ;
+    color: #ffffff;
+}
+
+.learn-more-btn a
+{    transition: background-color 2s ease;
+
+    text-decoration: none;
+    color: #d8412c;
+    border-bottom: 1px solid #d8412c;
+    padding: 5px;
+}
+ion-icon
+{
+    padding-left: 8px;
+    position: relative;
+    top: 2px;
+}
+.tours-images
+{
+    display: inline-block;
+}
+.tours-images img
+{
+width:200px;
+height: 200px;
+transition: 1s ease;
+}
+.tours-images img:hover
+{
+    border: 9px solid #41415b;
+    transform: scale(1.5);
+
+    padding: 15px;
+}
+#benfit-boxes
+{
+    padding-top: 25%;
+    padding-left: 5%;
+}
+.benfit-box
+{
+    display:inline-block;
+
+    background-color: #e0f0e3;
+    border: 1px solid #e0f0e3;
+    width: 250px;
+    opacity: 0.8;
+    height: 300px;
+    margin-left: 3%;
+    border-radius: 10px;
+    transition: 1s ease;
+}
+.benfit-box ion-icon
+{
+    font-size: 65px;
+    padding-top: 6%;
+}
+.benfit-box:hover
+{
+    transform: scale(1.5);
+    transform: translateY(-20px);
+    opacity: 1;
+}
+.box-icon 
+{
+    text-align: center;
+}
+
+.tours-images {
+    display: inline;
+    position: relative;
+    bottom: 245px;
+    left: 5%;
+}
+.tours-benfits
+{
+    height: 120vh;
+    background-image:linear-gradient(to right bottom,rgba(132, 128, 151,0.5) ,rgba(65, 65, 91,0.5)) ,url("../images/header3.jpeg");
+    background-size: cover;
+    background-position: center;
+    margin-top: 15%;
+    clip-path: polygon(42% 16%, 100% 0, 99% 100%, 0 100%, 0 29%);
+}
+.box-title h5
+{
+    padding-top: 10%;
+    font-size: 20px;
+    color: gray;
+    text-transform: uppercase;
+    text-align: center;
+}
+.box-desc
+{
+    padding:15px;
+    color: gray;
+    line-height: 15px;
+    font-size: 12px;
+}
+.packages
+{
+    margin-top: 10%;
+}
+.tour-box
+{
+    transition: 1s ease;
+    margin-left: 35px;
+    margin-top: 5%;
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #f6f6f6;
+    box-shadow: grey;
+    width: 300px;
+    height: 650px;
+}
+.tour-btn
+{
+    margin: 0 auto;
+    border: 1px solid #d8412c;
+    background-color: #d8412c;
+    border-radius:25px;
+    width: 100px;
+    margin-top: 5%;
+    transition: 1s ease;
+
+    padding: 5px;
+}
+.tour-btn a
+{
+
+
+    color: #ffffff;
+    text-decoration: none;
+}
+.tour-btn:hover
+{
+    border: 1px solid #616188;
+    background-color: #616188;
+}
+
+.most-papulor-tours
+{
+    margin-top: 10%;
+}
+.most-papulor-tours h1
+{
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: 0.5s ease;
+}
+.most-papulor-tours h1:hover
+{
+    transform: rotate(15deg);
+}
+.tour-item {
+    background-image: linear-gradient(to right bottom,rgba(240, 165, 13,0.5) ,rgba(240, 165, 13,0.5)) ,url(../images/dead-sea.jpg);
+    background-size: cover;
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
+}
+
+.tour-item2{
+    background-image: linear-gradient(to right bottom,rgb(0,52,0,0.5) ,rgb(0,205,0,0.5)) ,url(../images/forest.jpeg);
+    background-size: cover;
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
+}
+.tour-item3{
+    background-image: linear-gradient(to right bottom,rgb(77,77,255,0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
+    background-size: cover;
+    height: 40vh;
+    clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
+}
+.tour-box:hover
+{
+    transform: scale(1.1);
+}
+.tour-title, .tour-title2,.tour-title3
+{
+    position: absolute;
+    top: 28%;
+    left: 50%;
+    z-index: 1;
+    text-align: center;
+}
+
+.tour-title h3,h4
+{
+    color: #ffffff;
+}
+
+.tour-title h4 {
+    padding: 5px;
+    border: 1px solid rgba(240, 165, 13,0.5);
+    background-color: #ff9918;
+    font-size: 16px;
+    width: 149px;
+    height: 50px;
+    padding-top: 10%;
+}
+.tour-title2 h4 {
+    padding: 5px;
+    border: 1px solid rgb(0,205,0,0.5);
+    background-color: rgb(0,205,0);
+    font-size: 16px;
+    width: 149px;
+    height: 50px;
+    padding-top: 10%;
+}
+.tour-title3 h4 {
+    padding: 5px;
+    border: 1px solid rgb(0,0,179);
+    background-color: rgb(0,0,179);
+    font-size: 16px;
+    width: 149px;
+    height: 50px;
+    padding-top: 10%;
+}
+
+.tour-info
+{
+    text-align: center;
+    padding-top: 5%;
+    color: gray;
+}
+.tour-info p{
+    text-align: center;
+    padding: 10px;
+}
+.tour-info p::after
+{
+    display: block;
+    content: "";
+    height: 1px;
+    margin: 10px auto;
+    width: 50%;
+    background-color: gray
+}
+.packages
+{
+    margin:  0 10%;
+}
+.map
+{
+    margin-top: 20px;
+}
+.map iframe
+{
+    width: 100%;
+}
+footer
+{
+    height: 80vh;
+    margin-top: 5%;
+
+    background-color: #333333;
+}
+.footer-logo img
+{
+    width: 15%;
+    margin: 0 42%;
+    padding-top: 2%;
+}
+.footer-mainnavbar
+{
+    padding: 30px;
+}
+.footer-mainnavbar #navbar
+{
+    border-top: 1px solid gray;
+width: 50%;
+
+}
+.footer-mainnavbar ul li
+{
+    transition: 1s ease;
+    margin-top: 2%;
+    display: inline-block;
+    padding: 5px;
+}
+.footer-mainnavbar ul li a
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+#navbar li:hover
+{
+    color: #d8412c;
+    transform: rotate(15deg);
+}
+#navbar li a:hover
+{
+    color: #d8412c;
+}
+
+.contact
+{
+position: relative;
+bottom: 40px;
+float:right;
+
+
+}
+
+.contact 
+{
+    width: 30%;
+    margin-top: 5px;
+    border-top: 1px solid gray;
+   padding: 10px;
+color: #ffffff;
+
+}
+
+
+
+#social-media
+{
+    margin-top: 5%;
+    list-style-type: none;
+    border-top: none;
+
+
+}
+#social-media ul li 
+{
+    display: inline-block;
+    border:1px solid #f3f3f3;
+padding: 20px;
+border-radius: 50%;
+transition: 0.3s ease;
+}
+
+#social-media ul li ion-icon
+{
+    font-size: 30px;
+    
+} 
+
+#social-media ul  :hover
+{
+    background-color: #d8412c;
+    
+}
+#social-media ul li a  :hover
+{
+    background-color: #d8412c;
+
+}
+
+#social-media ul li  a
+{
+    border: none;
+    background-color: none;
+
+}
+
+
+
+@keyframes moveright
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes opacityanimation
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+}
+@keyframes movetop
+{
+    0%
+    {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
