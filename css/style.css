@@ -39,7 +39,7 @@ header
 }
 .logo img
 {
-    width: 10%;
+    width: 11%;
     margin: 1%;
     animation: moveright 3s ease-in-out;
 }
@@ -88,7 +88,10 @@ header
     overflow: hidden;
 
 }
-
+.video-section video
+{
+    width: 100%;
+}
 
 .color-overlay {
     background-image: linear-gradient(to right bottom,rgba( 196, 196, 255,0.2) ,rgba( 196, 196, 255,0.2));
@@ -122,7 +125,7 @@ color: #ffffff;
     background-color: #ffffff;
     width: 65px;
     height: 65px;
-    padding: 25px;
+    padding: 25px 17px;
     cursor: pointer;
     border-radius: 50%;
     margin: 5px 0px 0px 6px;
@@ -581,10 +584,12 @@ color: #ffffff;
 #social-media ul li 
 {
     display: inline-block;
-    border:1px solid #f3f3f3;
-padding: 20px;
-border-radius: 50%;
-transition: 0.3s ease;
+    border: 1px solid #f3f3f3;
+    padding: 23px;
+    width: 90px;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    font-size: 30px;
 }
 
 #social-media ul li ion-icon
