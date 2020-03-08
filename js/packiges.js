@@ -1,3 +1,5 @@
+'use strict'
+
 var packgesGenerator = document.getElementById('packages-generator');
 
 var trips = ["deadSea.jpg", "hiking.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg"];
@@ -11,7 +13,7 @@ function Trips(trip) {
     this.peopleGoing = 0;
     this.tripDestination = "";
     this.DiscountValue = 0;
-
+    this.tripDuration ="";
     Trips.all.push(this);
 
 }
@@ -42,10 +44,10 @@ function tripsGenerator() {
         var title = document.createElement('h1');
         divE2.appendChild(title);
         title.textContent = `${titleAndDuration[i].split(',')[0].toUpperCase()}`
-        var tripDuration= document.createElement('h2');
-        divE2.appendChild(tripDuration);
-        tripDuration.textContent= `${titleAndDuration[i].split(',')[1]}`
-
+        var tripDuration1= document.createElement('h2');
+        divE2.appendChild(tripDuration1);
+        tripDuration1.textContent= `${titleAndDuration[i].split(',')[1]}`
+       imageHolder.tripDuration = titleAndDuration[i].split(',')[1];
 
         var btnE1 = document.createElement('input');
  
@@ -53,6 +55,10 @@ function tripsGenerator() {
         btnE1.setAttribute('type', "button");
         btnE1.value = "Learn more"
         divE2.appendChild(btnE1);
+
+        var packString = JSON.stringify(Trips.all);
+        localStorage.setItem('Packges', packString);
+
 
     }
 }
