@@ -61,7 +61,7 @@ textarea
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    margin-left: 5.8%;
+    margin-left: 6.4%;
 }
 form {
     position: relative;
@@ -94,7 +94,7 @@ label
 }
 #country
 {
-    margin-left: 6.9%;
+    margin-left: 7.4%;
 }
 #message
 {
@@ -106,7 +106,7 @@ label#message {
     left: 4px;
 }
 #noOfPeople{
-    margin-left: 1%;
+    margin-left: 1.2%;
 }
 .form-btn
 {
