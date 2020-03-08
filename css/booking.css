@@ -47,7 +47,6 @@ input[type=text], input[type=number],input[type=email]{
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 textarea
 {
@@ -62,7 +61,6 @@ textarea
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
     margin-left: 5.8%;
 }
 form {
