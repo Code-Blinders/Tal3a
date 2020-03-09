@@ -17,6 +17,7 @@ function Trips(trip) {
 }
 
 Trips.all = [];
+console.log(Trips.all);
 
 for (let i = 0; i < trips.length; i++) {
     new Trips(trips[i]);
