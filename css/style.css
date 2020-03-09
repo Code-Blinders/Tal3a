@@ -393,7 +393,7 @@ transition: 1s ease;
 .tour-btn:hover
 {
     border: 1px solid #616188;
-    background-color: #616188;
+    background-color: #5a5a7e;
 }
 
 .most-papulor-tours
@@ -411,6 +411,7 @@ transition: 1s ease;
 {
     transform: rotate(15deg);
 }
+/* one item  */
 .tour-item {
     background-image: linear-gradient(to right bottom,rgba(240, 165, 13,0.5) ,rgba(240, 165, 13,0.5)) ,url(../images/dead-sea.jpg);
     background-size: cover;
