@@ -1,0 +1,61 @@
+.gallerty-title h1
+{
+    text-align: center;
+}
+
+.filter-btn
+{
+    border: none;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#gellary-section
+{
+    margin-top: 3%;
+}
+.deadsea-gallery-img ,.aquba-gallery-img{
+    width: 200px;
+    height: 150px;
+    margin-left: 10px;
+    margin-top: 4%;
+    transition: 2s ease;
+}
+
+
+.deadsea-gallery-img:hover
+{
+    transform: scale(1.1);
+}
+.aquba-gallery-img:hover
+{
+    transform: scale(1.1);
+
+}
+#deadsea-filter-btn,#aquba-filter-btn,#jarsh-filter-btn,#rum-filter-btn,#petra-filter-btn
+{
+    border: none;
+    padding: 20px;
+    border: 1px solid gray;
+    cursor: pointer;
+    transition: 3s ease;
+}
+button
+{
+    transition: 3s ease;
+}
+
+button:hover
+{
+    background-color: #cc3524;
+    color: #ffffff;
+}
+.image-container
+{
+    display: inline-block;
+}
+.filter-btns
+{
+    text-align: center;
+}
