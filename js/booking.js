@@ -25,6 +25,7 @@ myform.addEventListener('submit', function (event) {
   event.target.country.value= "";
   event.target.noOfPeople.value="";
   event.target.messageTA.value="";
+
 });
 // make constructor
 function Booking (name,phone,email,country,noOfPeople,messageTA){
@@ -38,13 +39,13 @@ this.finalPrice=0;
 // make if clause to make discount
 Booking.prototype.sale = function(){
     if (this.noOfPeople < 3) {
-        packages = packages * 10/100 ;
+        packages = packages - (packages * 10/100) ;
     }else if (this.noOfPeople < 5){
-        packages = packages * 20/100 ;
+        packages = packages - (packages * 20/100) ;
     }else if (this.noOfPeople < 7){
-        packages = packages * 30/100 ;
+        packages = packages - (packages * 30/100) ;
     }else if (this.noOfPeople > 7){
-        packages = packages * 40/100 ;
+        packages = packages - (packages * 40/100) ;
     }
     this.finalPrice=packages*noOfPeople;
 }
