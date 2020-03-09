@@ -4,8 +4,15 @@ var packgesGenerator = document.getElementById('packages-generator');
 
 var trips = ["deadSea.jpg", "hiking.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg"];
 var titleAndDuration = ["Dead sea,5 Days", "Wadi ram,3 Days", "Om Qais,1 Day", "Seel al Zarqa,7 Days", "Al Aqaba,3 Days", "Jarash,2 Days"];
+var cusInfo = []
 
 
+// var name = event.target.name.value;
+//     var phone = event.target.phone.value;
+//     var email = event.target.email.value;
+//     var country = event.target.country.value;
+//     var noOfPeople = event.target.noOfPeople.value;
+//     var messageTA = event.target.messageTA.value;
 function Trips(trip) {
     this.tripName = trip;
     this.price = 0;
@@ -20,6 +27,14 @@ function Trips(trip) {
 
 Trips.all = [];
 
+function getData(){
+
+    var newBroughtData = localStorage.getItem('customerBooking');
+      if(newBroughtData){
+        cusInfo = JSON.parse(newBroughtData);
+       Trips.all.peopleGoing= cusInfo.nnoOfPeople;
+       console.log(Trips.all);
+      }}
 for (let i = 0; i < trips.length; i++) {
     new Trips(trips[i]);
 
@@ -55,7 +70,7 @@ function tripsGenerator() {
         btnE1.setAttribute('type', "button");
         btnE1.value = "Learn more"
         divE2.appendChild(btnE1);
-
+        getData();
         var packString = JSON.stringify(Trips.all);
         localStorage.setItem('Packges', packString);
 

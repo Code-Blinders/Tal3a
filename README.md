@@ -9,6 +9,13 @@ Leader : Sa'ed Al-Khateeb
  3- Thaer Abu-Mousa 
  4- Fatema Owdeh 
 
+
+ our wireframe 
+ ![homePage](homepage-wireframe.png)
+ ![bookingsPage](bookingPage-wireframe.png)
+ ![packgesPage](Pakges-wirefram.png)
+ ![ticketPage](ticketPage-wirefram.png)
+
  --------------
  version 1.01 
  6/3/2020 
@@ -23,5 +30,11 @@ Alaa helped as an observer with the booking page
  -----------
  version 1.03
  8/3/2020 
- ...loading 
- 
+more steady progress is happening all over the website in all the pages 
+by all the team memberes wither its js html or css everyone is trying somthing and working on somthing helping each other 
+no work can be secified for now 
+
+------------
+version 1.04
+9/3/2020
+loading....
