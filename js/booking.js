@@ -11,11 +11,9 @@ console.log(tessst);
 // add Event Listener
 myform.addEventListener('submit', function (event) {
     event.preventDefault();
-    if (testtttt){
-        event.target.name.value = testtttt; 
-    } else {
+      
     var name = event.target.name.value ;
-    }
+    
     var phone = event.target.phone.value;
     var email = event.target.email.value;
     var country = event.target.country.value;
