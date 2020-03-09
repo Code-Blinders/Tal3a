@@ -426,7 +426,7 @@ transition: 1s ease;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
 }
 .tour-item3{
-    background-image: linear-gradient(to right bottom,rgb(77,77,255,0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
+    background-image: linear-gradient(to right bottom,rgba(77, 77, 255, 0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
     background-size: cover;
     height: 40vh;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
