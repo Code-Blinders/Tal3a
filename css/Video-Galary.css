@@ -1,0 +1,159 @@
+
+/* #H1{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    color: rgb(66, 34, 51);
+    background-color: rgb(128, 168, 207);
+    padding: 10px;
+    
+    
+    
+} */
+
+/* #H23{
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 32px;
+    margin: -13px;
+    margin-top: -42px; */
+
+/* } */
+.videoall {
+    margin: 10% 0px;
+    margin-bottom: 5%;
+    padding: 4%;
+    margin: 0 2%;
+  
+}
+#PPetra{
+    color: rgb(32, 58, 145);
+}
+#PRam{
+    color: rgb(32, 58, 145);
+
+}
+#PDead{
+    color: rgb(32, 58, 145);
+
+}
+#PAjloun{
+    color: rgb(32, 58, 145);
+
+}
+/* #H2{
+
+    text-align: center;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 32px;
+    margin: -13px;
+    margin-top: -42px;
+
+} */
+.video-item {
+    margin-left: 7px;
+    border-radius: 8px;
+    display: inline-block;
+    padding: 4px;
+    background-color: #fff;
+    height: 390px;
+}
+.video-box {
+    border: 1px solid #f3f3f3;
+    background-color: #f3f3f3;
+    width: 300px;
+    height: 200px;
+    bottom: 37px;
+}
+.V2  {
+    width: 300px !important;
+    border-radius: 10px !important;
+    height: 240px !important;
+    position: relative !important;
+    bottom: 37px !important;}
+
+.video-title 
+{
+    font-style: 20px;
+    font-weight: bold;
+    padding-left: 7%;
+    position: relative;
+    bottom: 30px;
+    font-family: monospace;
+    margin-top: -33px;
+}
+.video-content
+{
+    padding: 5%;
+}
+.video-item video {
+    width: 300px;
+    border-radius: 10px;
+    height: 240px;
+    position: relative;
+    bottom: 37px;
+}
+#Ajloun {
+    position: relative;
+    bottom: 18px;
+}
+#rum
+{
+    position: relative;
+    bottom: 18px;
+}
+
+#video3 {
+    position: relative;
+    left: -1px;
+    bottom: 37px;
+}
+
+#video4 {
+    position: relative;
+    bottom: 37px;
+}
+.videoall {
+    margin: 10% 0px;
+    margin-bottom: 5%;
+    padding: 4%;
+    background-image: url(/img/background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+/* .videoall{
+    display:block;
+
+}
+.V1{
+    width: 30%;
+    margin: 5%;
+    float: left;
+}
+.V2{
+    width: 30%;
+    margin: 5%;
+    float: right;
+}
+.V3{
+    width: 30%;
+    margin: 5%;
+    float: left;
+}
+.V4{
+    width: 30%;
+    margin: 5%; 
+    float: right;
+} */
+.v1 {
+    position: relative;
+    
+
+}
+/* #test {
+    margin-top: 20px;
+} */
