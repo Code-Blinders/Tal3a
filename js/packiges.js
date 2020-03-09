@@ -46,6 +46,7 @@ function tripsGenerator() {
         var imageHolder = Trips.all[i];
         //created a div and filling it with an image / title/ price /duration usnig DOM 
         var divE2 = document.createElement('div');
+        divE2.classList.add("package-front");
         packgesGenerator.appendChild(divE2);
         var imageHolder2 = document.createElement('img');
         // putting attributes for the image so we can show it properly 
@@ -63,7 +64,7 @@ function tripsGenerator() {
         divE2.appendChild(tripPrice);
         tripPrice.textContent = `${prices[i]}`;
         // trip duration 
-        var tripDuration1 = document.createElement('h2');
+        var tripDuration1 = document.createElement('h3');
         divE2.appendChild(tripDuration1);
         tripDuration1.textContent = `${titleAndDuration[i].split(',')[1]}`
 
@@ -87,3 +88,20 @@ function tripsGenerator() {
 
 // calling the function to render the page 
 tripsGenerator();
+
+function tripsGenerator2() { 
+//   divE2 = document.createElement('div');
+ packgesGenerator.appendChild(divE2);
+ divE2.classList.add("package-back");
+ packgesGenerator.classList.add("backfilp");
+
+ divE2.textContent= "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit perspiciatis non consequuntur saepe vitae architecto exercitationem dolorum suscipit et quasi ab rem minima, dicta, modi vel ea qui maiores commodi."
+ var btnE2= document.createElement('input');
+        btnE2.setAttribute('type', "button");
+        btnE2.value = "Book now"
+
+divE2.appendChild(btnE2);
+
+
+}
+// tripsGenerator2();
