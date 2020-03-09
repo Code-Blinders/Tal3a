@@ -466,3 +466,11 @@ div.step ul li span {
     padding: 8px;
     margin: 0px 63px;
 }
+.StepContant{
+    text-align: center;
+    clear: both;
+}
+.input{
+    display: inline-block; 
+    margin-left: 4%;
+}
