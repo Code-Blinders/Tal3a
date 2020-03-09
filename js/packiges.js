@@ -75,7 +75,16 @@ function tripsGenerator() {
         //creating the learn more button 
         var btnE1 = document.createElement('input');
         btnE1.setAttribute('type', "button");
-        btnE1.value = "Learn more"
+        btnE1.value = "Book now"
+        btnE1.addEventListener('click',function(event){
+            // this event listner is to give values to a filler local storage of the selected trip so we can pass the name and  price of said trip
+            event.preventDefault();
+            window.location.href= 'Booking.html';
+            localStorage.setItem('selectedTrip', Trips.all[i].tripName);
+            localStorage.setItem('selectedTripPrice',prices[i]);
+
+
+        });
         divE2.appendChild(btnE1);
 
         // updating the data into a local storage 
