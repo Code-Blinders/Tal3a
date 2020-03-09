@@ -60,11 +60,7 @@ textarea {
     background-clip: padding-box;
     border: 1px solid #ced4da;
     border-radius: .25rem;
-<<<<<<< HEAD
-    margin-left: 7%;
-=======
     margin-left: 6.4%;
->>>>>>> 1df31cabe1787df507bb291c3b600cf4dd279b59
 }
 form {
     position: relative;
@@ -94,31 +90,16 @@ label
 {
     margin-left: 1.5%;
 }
-<<<<<<< HEAD
-#country {
-    margin-left: 8%;
-=======
-#country
-{
-    margin-left: 7.4%;
->>>>>>> 1df31cabe1787df507bb291c3b600cf4dd279b59
-}
 #message
 {
     position: relative;
-    bottom: 5%;
 }
 label#message {
     bottom: 34px;
     left: 4px;
 }
-<<<<<<< HEAD
-#noOfPeople {
-    margin-left: 1.5%;
-=======
 #noOfPeople{
     margin-left: 1.2%;
->>>>>>> 1df31cabe1787df507bb291c3b600cf4dd279b59
 }
 .form-btn
 {
