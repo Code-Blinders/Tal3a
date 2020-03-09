@@ -20,6 +20,7 @@ function Trips(trip) {
 }
 
 Trips.all = [];
+console.log(Trips.all);
 
 // fucntion to get data from the booking page 
 function getData() {
