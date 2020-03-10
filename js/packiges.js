@@ -2,7 +2,7 @@
 // the "packages-generator" is teh id of a section inside the packges.html page that we want to fill 
 var packgesGenerator = document.getElementById('packages-generator');
 // array to fill out the images 
-var trips = ["deadSea.jpg", "hiking.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg"];
+var trips = ["deadSea.jpg", "deadSea.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg"];
 var titleAndDuration = ["Dead sea,5 Days", "Wadi ram,3 Daysm", "Om Qais,1 Day", "Seel al Zarqa,7 Days", "Al Aqaba,3 Days", "Jarash,2 Days"];
 //array of the pricess , always note the element of each array (trips/titleAndDuration/prices) should all match eachotehr
 var prices = ["150JD", "100JD", "50JD", "450JD", "300JD", "120JD"];
@@ -80,7 +80,7 @@ function tripsGenerator() {
             // this event listner is to give values to a filler local storage of the selected trip so we can pass the name and  price of said trip
             event.preventDefault();
             window.location.href= 'Booking.html';
-            localStorage.setItem('selectedTrip', Trips.all[i].tripName);
+            localStorage.setItem('selectedTrip', titleAndDuration[i].split(',')[0].toUpperCase());
             localStorage.setItem('selectedTripPrice',prices[i]);
 
 
