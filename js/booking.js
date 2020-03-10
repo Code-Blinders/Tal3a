@@ -4,7 +4,7 @@ var myform = document.getElementById('info');
 console.log(myform);
 var tripName = localStorage.getItem('selectedTrip');
 var packages = localStorage.getItem('selectedTripPrice');
-packages= parseInt(packages);
+
 
 // add Event Listener
 myform.addEventListener('submit', function (event) {
