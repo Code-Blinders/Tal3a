@@ -5,7 +5,7 @@ var packgesGenerator = document.getElementById('packages-generator');
 var trips = ["deadSea.jpg", "deadSea.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg"];
 var titleAndDuration = ["Dead sea,5 Days", "Wadi ram,3 Daysm", "Om Qais,1 Day", "Seel al Zarqa,7 Days", "Al Aqaba,3 Days", "Jarash,2 Days"];
 //array of the pricess , always note the element of each array (trips/titleAndDuration/prices) should all match eachotehr
-var prices = ["150JD", "100JD", "50JD", "450JD", "300JD", "120JD"];
+var prices = ["150 JD", "100 JD", "50 JD", "450 JD", "300 JD", "120 JD"];
 
 var cusInfo = []
 

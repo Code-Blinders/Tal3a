@@ -3,9 +3,7 @@ var Customer = [];
 var myform = document.getElementById('info');
 console.log(myform);
 var tripName = localStorage.getItem('selectedTrip');
-var packages = localStorage.getItem('selectedTripPrice');
-
-
+var packages =250; 
 // add Event Listener
 myform.addEventListener('submit', function (event) {
     event.preventDefault();
@@ -110,10 +108,7 @@ function getCity(name){
     }
     function getNoOfPersons(no){
     document.getElementById("noOfPeople").value = no;
-    
     }
- 
-
 function checkCity(){
   if (tripName){
     document.getElementById("city").value = tripName;
@@ -122,6 +117,7 @@ function checkCity(){
   } else {
     step = 'step1'
     localStorage.clear();
+  
   }
 
 }
