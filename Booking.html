@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/booking.css" type="text/css">
 </head>
 
-<body>
+<body onload="checkCity()">
 
     <header class="main-header">
 
@@ -66,19 +66,15 @@
                         <label for="name" class="">
                             <h1 class="title">choose city</h1>
                         </label>
-                        <input type="text" id="city" required>
+                        <input type="text" id="city" required >
                         <div class="city1">
-                            <img src="img/deadSea.jpg" onclick="getCity('Dead Sea')" />
-
-                            <img src="img/wadiRam.jpg" onclick="getCity('Wadi Rum')" />
-
-                            <img src="img/wadiRam.jpg" onclick="getCity('Ajlon')" />
+                            <img src="img/deadSea.jpg" onclick="getCity('Dead sea')" />
+                            <img src="img/deadSea.jpg" onclick="getCity('Wadi ram')" />
+                            <img src="img/jordanSky.jpg" onclick="getCity('Om Qais')" />
                             <div>
-                                <img src="img/wadiRam.jpg" onclick="getCity('Aqapa')" />
-
-                                <img src="img/wadiRam.jpg" onclick="getCity('Azraq')" />
-
-                                <img src="img/wadiRam.jpg" onclick="getCity('Salt')" />
+                                <img src="img/river.jpg" onclick="getCity('Seel al Zarqa')" />
+                                <img src="img/wadiRam.jpg" onclick="getCity('Al Aqaba')" />
+                                <img src="img/walking.jpg" onclick="getCity('Jarash')" />
                             </div>
                         </div>
                     </div>
@@ -87,7 +83,7 @@
 
                         <label for="noOfPeople">Num of people</label><br>
                         <input type="number" id="noOfPeople" min="1" required> <br>
-                        <input type="range" id="vol" name="vol" min="0" max="50" onchange="getNoOfPersons(this.value)">
+                        <input type="range" id="vol" name="vol" min="0" max="20" onchange="getNoOfPersons(this.value)">
                     </div>
 
                     <div id="step3-content" class="steps ">

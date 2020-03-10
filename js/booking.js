@@ -1,12 +1,10 @@
 'use strict'
 var Customer = [];
-var packages = 700;
 var myform = document.getElementById('info');
 console.log(myform);
-var testtttt = localStorage.getItem('selectedTrip');
-var tessst = localStorage.getItem('selectedTripPrice');
-console.log(testtttt);
-console.log(tessst);
+var tripName = localStorage.getItem('selectedTrip');
+var packages = localStorage.getItem('selectedTripPrice');
+packages= parseInt(packages);
 
 // add Event Listener
 myform.addEventListener('submit', function (event) {
@@ -114,4 +112,16 @@ function getCity(name){
     document.getElementById("noOfPeople").value = no;
     
     }
+ 
 
+function checkCity(){
+  if (tripName){
+    document.getElementById("city").value = tripName;
+    next();
+    localStorage.clear();
+  } else {
+    step = 'step1'
+    localStorage.clear();
+  }
+
+}
