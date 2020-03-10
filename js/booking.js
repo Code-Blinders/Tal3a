@@ -3,6 +3,11 @@ var Customer = [];
 var packages = 700;
 var myform = document.getElementById('info');
 console.log(myform);
+var testtttt = localStorage.getItem('selectedTrip');
+var tessst = localStorage.getItem('selectedTripPrice');
+console.log(testtttt);
+console.log(tessst);
+
 // add Event Listener
 myform.addEventListener('submit', function (event) {
     event.preventDefault();
