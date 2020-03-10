@@ -80,7 +80,7 @@ function tripsGenerator() {
             // this event listner is to give values to a filler local storage of the selected trip so we can pass the name and  price of said trip
             event.preventDefault();
             window.location.href= 'Booking.html';
-            localStorage.setItem('selectedTrip', Trips.all[i].tripName);
+            localStorage.setItem('selectedTrip', titleAndDuration[i].split(',')[0].toUpperCase());
             localStorage.setItem('selectedTripPrice',prices[i]);
 
 
