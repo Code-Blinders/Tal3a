@@ -1,0 +1,86 @@
+
+ .package-front input {
+    margin-top: 20px;
+    margin-left: 70px;
+    border: none;
+    border: 1px solid #1e94b0;
+    background-color: #1e94b0;
+    padding: 8px;
+    width: 100px;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+    transition: 1s ease-in;
+}
+ 
+.package-front input:hover
+{
+    border: 1px solid #febe16;
+    background-color: #febe16;
+}
+.package-front img{
+    width: 100%;
+    height: 150px;
+  
+}
+.package-front {
+   
+    border: 1px solid #d0d0d0;
+    width: 230px;
+    height: 320px;
+    display: inline-block;
+    margin-left: 26px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.package-front h1 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 2%;
+    font-weight: bolder;
+    color: #000000;
+}
+
+.package-front h2 {
+    text-align: center;
+    color: #1e95b3;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+.package-front h2{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 2%;
+}
+
+.package-front h2{
+    text-align: center;
+}
+
+.package-front h3 {
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 2%;
+    color: darkgray;
+}
+
+.package-front h3 {
+    text-align: center;
+}
+#packages-generator .offer1
+{
+    width: 4%;
+    position: absolute;
+    top: 700px;
+    left: 16%;
+}
+#packages-generator .offer2
+{
+    width: 4%;
+    position: absolute;
+    top: 700px;
+    left:35%;
+}
+

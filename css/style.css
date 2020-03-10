@@ -24,14 +24,14 @@ body
 transition: 3s ease;
 
 }
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     display: none;
-}
+} */
 
 header
 {
     height: 95vh;
-    background-image:linear-gradient(to right bottom,rgba(	196, 196, 255,0.4) ,rgba(	196, 196, 255,0.4)) ,url("../images/hero-slider.jpeg");
+    background-image:linear-gradient(to right bottom,rgba(	196, 196, 255,0.1) ,rgba(	196, 196, 255,0.1)) ,url("../images/hero-slider.jpeg");
     background-size: cover;
     background-position: center;
     clip-path: polygon( 0 0, 100% 0, 100% 75%, 0 100%);
@@ -82,19 +82,50 @@ header
 {
     margin-top: 5%;
     width: 100%;
-    height: 80vh;
     position: relative;
     justify-content: center;
     overflow: hidden;
+    height: 100vh;
 
+}
+.user-img img {
+    margin-top: 4%;
+    margin-left: 20%;
+    float: left;
+    padding: 10px;
+    padding-right: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }
 .video-section video
 {
     width: 100%;
 }
+#testomnial-content
+{
+    margin-top: 8%;
+    padding-top: 9%;
+    width: 76%;
+}
+.user-title p
+{
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+.user-testmonial p
+{
+    margin-top: 9%;
+    width: 78%;
+}
+#testmonial-content {
+    font-size: 13px;
+    width: 88%;
+    padding-top: 7%;
+}
 
 .color-overlay {
-    background-image: linear-gradient(to right bottom,rgba( 196, 196, 255,0.2) ,rgba( 196, 196, 255,0.2));
+    background-image: linear-gradient(to right bottom,rgba( 225, 225, 255,0.1) ,rgba( 225, 225, 255,0.1));
     top: 0;
     left: 0;
     position: absolute;
@@ -168,8 +199,7 @@ color: #ffffff;
 {
     transform: translateY(4px);
 }
-.change
-{
+.change {
     display: block;
 }
 .menu-bg
@@ -285,7 +315,6 @@ transition: 1s ease;
 }
 .tours-images img:hover
 {
-    border: 9px solid #41415b;
     transform: scale(1.5);
 
     padding: 15px;
@@ -393,7 +422,7 @@ transition: 1s ease;
 .tour-btn:hover
 {
     border: 1px solid #616188;
-    background-color: #616188;
+    background-color: #5a5a7e;
 }
 
 .most-papulor-tours
@@ -411,6 +440,7 @@ transition: 1s ease;
 {
     transform: rotate(15deg);
 }
+/* one item  */
 .tour-item {
     background-image: linear-gradient(to right bottom,rgba(240, 165, 13,0.5) ,rgba(240, 165, 13,0.5)) ,url(../images/dead-sea.jpg);
     background-size: cover;
@@ -425,7 +455,7 @@ transition: 1s ease;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
 }
 .tour-item3{
-    background-image: linear-gradient(to right bottom,rgb(77,77,255,0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
+    background-image: linear-gradient(to right bottom,rgba(77, 77, 255, 0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
     background-size: cover;
     height: 40vh;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
@@ -615,9 +645,50 @@ color: #ffffff;
     background-color: none;
 
 }
+.feedback
+{
+    position: absolute;
+    top: 0;
+    z-index: 1;
 
 
+}
+.feedback h1
+{
+    color: red;
+    font-size: 25px;
+    transform: translate(355px, 50px);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
 
+
+.feedback-user {
+    clip-path: polygon(25% 0%, 100% 0%, 95% 100%, 14% 100%);
+        background-color: #ffffff;
+    opacity: 0.9;
+    height: 200px;
+    margin-bottom: 2%;
+    width: 950px;
+    transform: translate(14%,90px);
+}
+.feedback-user2 {
+    clip-path: polygon(25% 0%, 100% 0%, 95.5% 100%, 15% 100%);
+    background-color: #ffffff;
+    opacity: 0.9;
+    height: 200px;
+    position: relative;
+    left: 1%;
+    margin-bottom: 2%;
+    width: 89%;
+    transform: translate(0%,90px);
+}
+.user-testmonial p
+{
+    margin-top: 7%;
+    width: 76%;
+}
 @keyframes moveright
 {
     0%
