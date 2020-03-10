@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/booking.css" type="text/css">
 </head>
 
 <body>
-    <header>
         <header class="main-header">
 
             <div id="menu-bar">
@@ -35,171 +36,86 @@
                 <div class="hero-slider-title">
 
                     <h1>YALLA TAL3A</h1>
-                    <ul>
-                        <!-- <li>
-                            ::before
-                            "Choose the city"
-                            ::after
-                        </li>
-                        <li>
-                            ::before
-                            "No of people"
-                            ::after
-                        </li>
-                        <li>
-                            ::before
-                            "Fill your information"
-                            ::after
-                        </li>
-                        <li>
-                            ::before
-                            "Message us"
-                            ::after
-                        </li> -->
-                    </ul>
                 </div>
             </div>
         </header>
-    </header>
-    <!-- <main>
-        <form>
-            <fieldset>
-                <legend>Booking Information</legend>
-            </fieldset>
-            <label for="name">Full Name</label>
-            <input type="text" id="name" required>
-            <label for="phone">Phone Number</label>
-            <input type="number" id="phone" maxlength="10" required>
-            <label for="email">Email Address</label>
-            <input type="email" id="email" required>
-            <label for="country">Country</label>
-            <input type="text" id="country">
-            <label for="Message"></label>
-            <textarea rows="2" cols="3"></textarea>
-            <input type="submit" id="submit">
-
-        </form> -->
-    <div class="step">
-        <ul>
-            <li>
-                <span>1</span>
-                <br>
-                <br>
-                Choose the city.
-            </li>
-            <li>
-                <span>2</span>
-                <br>
-                <br>
-                Choose No of people.
-            </li>
-            <li>
-                <span>3</span>
-                <br>
-                <br>
-                Fill you'r Personal Info.
-            </li>
-            <li>
-                <span>4</span>
-                <br>
-                <br>
-                Finish Strong.
-            </li>
-        </ul>
-    </div>
-    <div class="StepContant">
-        <h2>Step1</h2>
-        <h3>Choose the City</h3>
-        <div class="input">
-            <!-- <form>
-                <input type="checkbox" name="check" onclick="onlyOne(this)">
-                <br>
-                <label for="country">Dead sea</label>
-                <input type="checkbox" name="check" onclick="onlyOne(this)">
-                <br>
-                <label for="country">Dead sea</label>
-                <input type="radio" id="country">
-            <br>
-            <label for="country">Dead sea</label>
-            <input type="radio" id="country">
-            <br>
-            <label for="country">Wadi ram</label>
-            <input type="radio" id="country">
-            <br>
-            <label for="country">Om Qais</label>
-            <input type="radio" id="country">
-            <br>
-            <label for="country">Seel al Zarqa</label>
-            <input type="radio" id="country">
-            <br>
-            <label for="country">Al Aqaba</label>
-            <input type="radio" id="country">
-            <br>
-            </form> -->
-<form>
-  <input type="radio" id="country" value="Dead sea">
-  <label for="country">Dead sea</label><br>
-  <input type="radio" id="country1" value="female">
-  <label for="country1">Female</label><br>
-  <input type="radio" id="country2" value="other">
-  <label for="country2">Other</label>
-</form> 
-
-        </div>
-        <div class="StepContant">
-            <h2>Step2</h2>
-            <p>Choose No of people</p>
-            <input type="range" id="noOfPeople" min="0" max="50">   
-        </div>
-        <div class="StepContant">
-            <h2>Step3</h2>
-            <input type="text" name="" id="" placeholder="Full Name">
-            <input type="text" pattern="\d*" id="phone" maxlength="10" placeholder="Phone Number" required>
-            <input type="email" id="email" placeholder="Email Address" required>
-        </div>
-        <div class="StepContant">
-            <h2>Step4</h2>
-            <textarea rows="2" cols="3" id="messageTA"></textarea>
-        </div>
-        <!-- <section class="booking">
-            <h1>Start Booking Now</h1>
-
-            <div class="booking-box">
-                <div class="booking-form">
-
+    <main>
+        <div class="container">
+             <h1>REQUEST BOOKING</h1>
+            <div class="progress">
+              <div class="progress-track"></div>
+              <div id="step1" class="progress-step">
+                Step One
+              </div>
+              <div id="step2" class="progress-step">
+                Step Two
+              </div>
+              <div id="step3" class="progress-step">
+                Step Three
+              </div>
+              <div id="step4" class="progress-step">
+                Complete
+              </div>
+              </div>
+              <div class="content">
+                <form id = "info">
+                <div id="step1-content" class="steps active">
+                 <label for="name" class=""><h1 class="title">choose city</h1></label>
+                          <input type="text" id="city" required >
+                          <div class="city1">
+                          <img src="img/deadSea.jpg" onclick="getCity('Dead Sea')"/>
+                          
+                          <img src="img/wadiRam.jpg"  onclick="getCity('Wadi Rum')"/>
+                          
+                          <img src="img/wadiRam.jpg"  onclick="getCity('Ajlon')"/>
+                          <div>
+                          <img src="img/wadiRam.jpg"  onclick="getCity('Aqapa')"/>
+                          
+                          <img src="img/wadiRam.jpg"  onclick="getCity('Azraq')"/>
+                          
+                          <img src="img/wadiRam.jpg"  onclick="getCity('Salt')"/>
+                        </div>
+                          </div>
                 </div>
-                <div class="booking-img">
-
+                
+                <div id="step2-content" class="steps ">
+                
+                        <label for="noOfPeople">Num of people</label><br>
+                        <input type="number" id="noOfPeople" min="1"  required > <br>
+                        <input type="range" id="vol" name="vol" min="0" max="50" onchange="getNoOfPersons(this.value)">
                 </div>
-
-                <form id="info">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" required>
-                    <br>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" pattern="\d*" id="phone" maxlength="10" required>
-                    <br>
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" required>
-                    <br>
-                    <label for="country">Country</label>
-                    <input type="text" id="country" required>
-                    <br>
-                    <label for="noOfPeople">Num of people</label>
-                    <input type="number" id="noOfPeople" min="1" required>
-                    <br>
-                    <label for="messageTA" id="message">Message</label>
-                    <textarea rows="2" cols="3" id="messageTA"></textarea>
-                    <br>
-                    <div class="form-btn">
-                        <input type="submit" id="submit" onClick="location.href='../ticket.html'">
-
-                    </div>
-
-                </form>
-            </div>
-        </section> -->
-        </main>
+                
+                 <div id="step3-content" class="steps ">
+                          <label for="name">Full Name</label>
+                          <br>
+                          <input type="text" id="name" required><br>
+                          <label for="phone">Phone Number</label><br>
+                          <input type="text" pattern="\d*"id="phone" maxlength="10" required>
+                          <br>
+                          <label for="email">Email Address</label><br>
+                          <input type="email" id="email" required>
+                          <br>
+                          <label for="addres">Address</label><br>
+                          <input type="text" id="addres" required>
+                 </div>
+                 <div id="step4-content" class="steps ">
+                          <label for="messageTA" id="message">If there are any concerns or problems you want to tell us, please drop a message in the box below.</label><br>
+                          <textarea rows="4" cols="5"  id="messageTA"></textarea>
+                          <br>
+                          <div class="form-btn">
+            <input type="submit" id="submit" onClick ="location.href='../ticket.html'" class="hidden">
+          
+                          </div>
+              </div>
+                      </form>
+              </div>
+            
+          
+                              
+            <button onClick=next() id="next">Next Step</button>
+          </div>
+    </main>
+    <br>
         <footer>
             <div class="footer-logo">
                 <img src="images/logo.png" alt="logo">
