@@ -719,6 +719,10 @@ color: #ffffff;
 {
     letter-spacing: 3px;
 }
+.tour-box
+{
+    box-shadow: 5px 10px 8px 0px #888888;
+}
 @keyframes moveright
 {
     0%
@@ -762,6 +766,10 @@ color: #ffffff;
 .container h1
 {
     transition: 0.3s ease;
+};
+.form-btn
+{
+    width: 50%;
 }
 .container h1:hover
 {

@@ -1,22 +1,7 @@
 'use strict';
 
-var test = [];
 var cusInfo = [];
 
-function infoTrip (){
-    var informationTrip = localStorage.getItem('Packges');
-    if(informationTrip) {
-        test = JSON.parse(informationTrip);
-      
-    }
-   }
-  
-
-// var informations = [];
-// function infoTrip (){
-//     var informationTrip =localStorage.getItem('Packges');
-//     test= JSON.parse(informationTrip);
-// }
 function infoUser (){
     
     var informationUser = localStorage.getItem('customerBooking');
@@ -29,45 +14,47 @@ function infoUser (){
         // cusInfo[i];
         var ulE1 =document.createElement('ul');
         ticket.appendChild(ulE1);
-        for (var i=0;i<7;i++) {
-    var liE1 = document.createElement('li');
-    ulE1.appendChild(liE1);
-        liE1.textContent = `name: ${cusInfo[i].name}`;
-        var liE1 = document.createElement('li');
-    ulE1.appendChild(liE1);
-        liE1.textContent = `phone: ${cusInfo[i].phone}`;
-        var liE1 = document.createElement('li');
-        ulE1.appendChild(liE1);
-        liE1.textContent = `email: ${cusInfo[i].email}`;
-        var liE1 = document.createElement('li');
-         ulE1.appendChild(liE1);
-            liE1.textContent = `country: ${cusInfo[i].country}`;
-        var liE1 = document.createElement('li');
+        for (var i=0;i<cusInfo.length;i++) {
+
+            var liE5 = document.createElement('li');
+            liE5.classList.add("travel");
+              ulE1.appendChild(liE5);
+               liE5.textContent = ` ${cusInfo[i].city}`;
+               
+            var liE1 = document.createElement('li');
             ulE1.appendChild(liE1);
-           liE1.textContent = `noOfPeople: ${cusInfo[i].noOfPeople}`;
-           var liE1 = document.createElement('li');
-           ulE1.appendChild(liE1);
-          liE1.textContent = `messageTA: ${cusInfo[i].finalPrice}`;
-    // }
-        // console.log(cusInfo);
-        // cusInfo[i];
-        
+            liE1.classList.add("name");
+            liE1.textContent = `Name : ${cusInfo[i].name}`;
+
+            var liE2 = document.createElement('li');
+            liE2.classList.add("phone");
+            ulE1.appendChild(liE2);
+            liE2.textContent = `phone: ${cusInfo[i].phone}`;
+
+            var liE3 = document.createElement('li');
+            liE3.classList.add("email");
+            ulE1.appendChild(liE3);
+            liE3.textContent = `Email : ${cusInfo[i].email}`;
+
+            var liE4 = document.createElement('li');
+            liE4.classList.add("Address");
+            ulE1.appendChild(liE4);
+            liE4.textContent = `User Address : ${cusInfo[i].addres}`;
+       
+            var liE6 = document.createElement('li');
+            liE6.classList.add("numPeople");
+            ulE1.appendChild(liE6);
+            liE6.textContent = `Number Of People: ${cusInfo[i].noOfPeople}`;
+
+           var liE7 = document.createElement('li');
+           liE7.classList.add("finalPrice");
+           ulE1.appendChild(liE7);
+           
+          liE7 .textContent = `Total: ${cusInfo[i].finalPrice}JD `;
+   
     }
 }
 }
-// function infoUser (){
-    //     var informationUser = localStorage.getItem('customerBooking');
-    //     cusInfo=JSON.parse(informationUser);
-    // }
-    
-    // var ulE1 =document.createElement('ul');
-    // ticket.appendChild(ulE1);
-    // var liE1 = document.createElement('li');
-    // ulE1.appendChild(liE1);
-    // liE1.textContent = `name :  ${cusInfo}` ;
 
-
-// infoTrip();
 infoUser();
-//console.log(cusInfo);
 
