@@ -3,9 +3,9 @@
 var packgesGenerator = document.getElementById('packages-generator');
 // array to fill out the images 
 var trips = ["deadSea.jpg", "hiking.jpg", "jordanSky.jpg", "river.jpg", "wadiRam.jpg", "walking.jpg","karak.jpg","dana.jpg"];
-var titleAndDuration = ["Dead sea,5 Days", "Wadi ram,3 Daysm", "Om Qais,1 Day", "Seel al Zarqa,7 Days", "Al Aqaba,3 Days", "Jarash,2 Days","karak,3 Days","Dana 5 Days"];
+var titleAndDuration = ["Dead sea,5 Days", "Wadi ram,3 Daysm", "Om Qais,1 Day", "Seel al Zarqa,7 Days", "Al Aqaba,3 Days", "Jarash,2 Days","karak,3 Days","Dana,5 Days"];
 //array of the pricess , always note the element of each array (trips/titleAndDuration/prices) should all match eachotehr
-var prices = ["150JD", "100JD", "50JD", "450JD", "300JD", "120JD","120JD"];
+var prices = ["150JD", "100JD", "50JD", "450JD", "300JD", "220JD","120JD","250JD"];
 
 var cusInfo = []
 

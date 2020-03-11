@@ -117,11 +117,11 @@ header
     padding-bottom: 20px;
     font-weight: bold;
 }
-.user-testmonial p
+/* .user-testmonial p
 {
     margin-top: 9%;
     width: 78%;
-}
+} */
 #testmonial-content {
     font-size: 13px;
     width: 88%;
@@ -190,6 +190,10 @@ color: #ffffff;
     padding: 18px 0px;
     text-align: center;
     animation:  opacityanimation 2s ease-in-out;
+    transition: 3s ease;
+    animation: navbaranimate 2s ease;
+
+
 
 }
 
@@ -197,6 +201,10 @@ color: #ffffff;
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
+}
+.nav li a:hover
+{
+
 }
 .main-nav
 {
@@ -275,6 +283,15 @@ transition: 0.3s ease-in-out;
 .tours-motvation-desc p {
     color: gray;
     padding-left: 2%;
+}
+.box-desc
+{
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.box-title
+{
+    padding-bottom: 30px;
 }
 .tour-content {
     margin-top: 5%;
@@ -391,9 +408,9 @@ transition: 1s ease;
 .box-desc
 {
     color: gray;
-    line-height: 15px;
+    line-height: 18px;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 .packages
 {
@@ -687,15 +704,20 @@ color: #ffffff;
     opacity: 0.9;
     height: 200px;
     position: relative;
-    left: 1%;
+    left: 0%;
     margin-bottom: 2%;
-    width: 89%;
+    width: 80%;
     transform: translate(0%,90px);
 }
 .user-testmonial p
 {
     margin-top: 7%;
-    width: 76%;
+    width: 80%;
+    letter-spacing: 10px;
+} 
+.border ul li
+{
+    letter-spacing: 3px;
 }
 @keyframes moveright
 {
@@ -737,6 +759,28 @@ color: #ffffff;
         transform: translateY(0);
     }
 }
+.container h1
+{
+    transition: 0.3s ease;
+}
+.container h1:hover
+{
+    transform: rotate(5deg);
+}
+@keyframes navbaranimate
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.01)
+                   translateY(50px);
+      }
+ 
+      100% {
+        transform: scale(1);
+        height: 100%;
+        padding-bottom: 50;
+      }
+    }
 
 
 
