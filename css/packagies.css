@@ -1,7 +1,7 @@
 
  .package-front input {
     margin-top: 20px;
-    margin-left: 70px;
+    margin-left: 90px;
     border: none;
     border: 1px solid #1e94b0;
     background-color: #1e94b0;
@@ -15,8 +15,8 @@
  
 .package-front input:hover
 {
-    border: 1px solid #febe16;
-    background-color: #febe16;
+    border: 1px solid #e23a23;
+    background-color: #e23a23;
 }
 .package-front img{
     width: 100%;
@@ -24,10 +24,11 @@
   
 }
 .package-front {
-   
+    box-shadow: 5px 10px 8px 10px #888888;
+
     border: 1px solid #d0d0d0;
-    width: 230px;
-    height: 320px;
+    width: 280px;
+    height: 415px;
     display: inline-block;
     margin-left: 26px;
     margin-top: 5%;

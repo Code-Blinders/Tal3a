@@ -1,0 +1,92 @@
+
+#about-us-intro h1
+{
+    text-align: center;
+
+    color: darkslategray;
+    letter-spacing: 2px;
+    font-weight: lighter;
+}
+.about-us p
+{
+    text-align: center;
+
+    color: gray;
+    font-size: 20px;
+}
+.users {
+    margin: 5% 5%;
+}
+
+.user-img img {
+    margin-top: 4%;
+    margin-left: 20%;
+    float: left;
+    padding: 0px;
+    padding-right: 0px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.user-box {
+    border: 1px solid #f5f5f5;
+    display: inline-block;
+    width: 19%;
+    margin-left: 6px;
+    height: 450px;
+    text-align: center;
+    transition: 1s ease;
+}
+ .bar-style {
+    border: 2.5px solid green;
+    position: relative;
+    top: 80px;
+    z-index: -1;
+} 
+.user-box:hover
+{
+    padding: 2px;
+    box-shadow: 5px 10px 18px #888888;
+}
+.user-name h1
+{
+    color: darkslategray;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.user-job p
+{
+    font-size: 15px;
+}
+.user-desc
+{
+    padding: 10px;
+}
+.user-desc p
+{
+    color: #000000;
+}
+.user-social-media ul
+{
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+.user-social-media ul li {
+    text-align: left;
+    display: inline-block;
+    padding: 0 6px;
+}
+.user-social-media ul li .linkedin
+{
+    font-size: 25px;
+    color: #3b98fc;
+}
+.user-social-media ul li .google
+{
+    font-size: 25px;
+    color: #f4511e;
+}
+
+

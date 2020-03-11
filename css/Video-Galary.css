@@ -24,9 +24,7 @@
 .videoall {
     margin: 10% 0px;
     margin-bottom: 5%;
-    padding: 4%;
-    margin: 0 2%;
-  
+    padding: 4% 0px;
 }
 #PPetra{
     color: rgb(32, 58, 145);
@@ -56,8 +54,9 @@
 .video-item {
     margin-left: 7px;
     border-radius: 8px;
+    width: 24%;
     display: inline-block;
-    padding: 4px;
+    padding: 0px;
     background-color: #fff;
     height: 390px;
 }
@@ -119,11 +118,6 @@
 .videoall {
     margin: 10% 0px;
     margin-bottom: 5%;
-    padding: 4%;
-    background-image: url(/img/background.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 95vh;
 }
 /* .videoall{
     display:block;

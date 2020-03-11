@@ -5,8 +5,27 @@
     top: 400px;
     z-index: 1
 } */
+#ticket
+{
+    z-index: -1;
+    position: relative;
+    bottom: 135px;
+}
+.print-btn
+{
+    position: relative;
+    text-align: center;
+}
 
-
+.print-btn input {
+    border: none;
+    width: 10%;
+    padding: 30px;
+}
+.print-btn  ion-icon
+{
+font-size: 30px;
+}
 #ticket ul li {
     font-family: 'Fjalla One', sans-serif;
     color: #84142d;
@@ -70,7 +89,7 @@
     background-image: url(../img/map1.png);
     background-size: cover;
     background-repeat: no-repeat;
-    min-height: 238px;
+    min-height: 232px;
     background-color: #fff;
     position: relative;
     top: 60px;
@@ -81,6 +100,28 @@
     z-index: -1;
 
     
+}
+#ticket ul .travel
+{
+    float: left;
+    font-size: 35px;
+}
+#ticket ul .name {
+    right: 31%;
+    bottom: 30px;
+}
+.Address {
+    float: right;
+    width: 68%;
+}
+.email
+{
+    width: 68%;
+    float: right;
+    top: -108px;
+}
+.phone {
+    top: -33px;
 }
 .bar-code
 {
@@ -95,9 +136,6 @@
     left: 23px;
 }
 
-.phone {
-    margin-left: 40px;
-}
 
 .email {
     margin-left: 80px;
@@ -110,11 +148,20 @@
 }
 
 .numPeople{
-    margin-left: 160px;
+    right: 1px;
+}
+#ticket img
+{
+    position: relative;
+    top: 235px;
+    right: 15%;
 }
 
 .finalPrice {
+    text-align: right;
+    width: fit-content;
     margin-left: 200px;
+    width: 37%;
     color: rgb(4, 4, 182);
 }
 

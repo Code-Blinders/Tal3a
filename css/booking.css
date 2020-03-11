@@ -32,6 +32,7 @@ border-radius: 5px;
 }
 #message
 {
+  text-transform: lowercase;
     position: relative;
     margin: 2% 0%;
 }
@@ -137,19 +138,23 @@ h1 {
   button {
     position: relative;
     border: none;
-    background-color: rgb(25,113,149);;
+    background-color: rgb(25,113,149);
     padding: 15px;
     color: #fff;
     transition: background-color 1s ease-in;
     width: 200px;
-    cursor: pointer;    
+    cursor: pointer;
     border-radius: 25px;
-    left: 90%;
+    left: 39%;
+    top: 106px;
 }
 button:hover{
     background-color: #d8412c;
 }
-
+.form-btn
+{
+  width: 50%;
+}
 #submit {
     position: relative;
     border: none;

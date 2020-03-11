@@ -31,7 +31,7 @@ transition: 3s ease;
 header
 {
     height: 95vh;
-    background-image:linear-gradient(to right bottom,rgba(	196, 196, 255,0.1) ,rgba(	196, 196, 255,0.1)) ,url("../images/hero-slider.jpeg");
+    background-image:linear-gradient(to right bottom,rgba(	0, 0, 0,0.5) ,rgba(	0, 0,0,0.5)) ,url("../images/hero-slider.jpeg");
     background-size: cover;
     background-position: center;
     clip-path: polygon( 0 0, 100% 0, 100% 75%, 0 100%);
@@ -39,7 +39,7 @@ header
 }
 .logo img
 {
-    width: 11%;
+    width: 15%;
     margin: 1%;
     animation: moveright 3s ease-in-out;
 }
@@ -47,12 +47,14 @@ header
     position: absolute;
     /* left: 29%; */
     /* bottom: 40%; */
-    transform: translate(60%,20%);
+    transform: translate(65%,-15%);
 }
 .hero-slider-title h1 {
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 400;
-    letter-spacing: 35px;
+    letter-spacing: 25px;
+    color:#ffffff;
+    font-family: 'Patua One', cursive;
     animation: moveright 3s ease-in-out;
 
 }
@@ -62,7 +64,9 @@ header
     padding-top: 8%;
     font-size: 20px;
     text-align: center;
-    font-weight: 600;
+    color: #ffffff;
+    font-family: 'Patua One', cursive;
+    font-weight: 300;
     letter-spacing: 8px;
     animation: movetop 3s ease-in-out;
 }
@@ -113,11 +117,11 @@ header
     padding-bottom: 20px;
     font-weight: bold;
 }
-.user-testmonial p
+/* .user-testmonial p
 {
     margin-top: 9%;
     width: 78%;
-}
+} */
 #testmonial-content {
     font-size: 13px;
     width: 88%;
@@ -161,6 +165,14 @@ color: #ffffff;
     border-radius: 50%;
     margin: 5px 0px 0px 6px;
 }
+.nav
+{
+    list-style-type: none;
+}
+#nav li a
+{
+    color: #ffffff;
+}
 .bar {
     height: 3px;
     width: 90%;
@@ -178,6 +190,10 @@ color: #ffffff;
     padding: 18px 0px;
     text-align: center;
     animation:  opacityanimation 2s ease-in-out;
+    transition: 3s ease;
+    animation: navbaranimate 2s ease;
+
+
 
 }
 
@@ -185,6 +201,10 @@ color: #ffffff;
     font-size: 18px;
     color: #ffffff;
     text-decoration: none;
+}
+.nav li a:hover
+{
+
 }
 .main-nav
 {
@@ -206,7 +226,7 @@ color: #ffffff;
 {
     width: 0;
     height: 0;
-    background: radial-gradient(circle,#d8412c,#ee3116 );
+    background: radial-gradient(circle,#e23a23,#e23a23 );
     transition: 0.3s ease-in-out;
 }
 /* #menu-bar ,#menu-bar
@@ -264,8 +284,17 @@ transition: 0.3s ease-in-out;
     color: gray;
     padding-left: 2%;
 }
+.box-desc
+{
+    padding: 5px;
+    letter-spacing: 1px;
+}
+.box-title
+{
+    padding-bottom: 30px;
+}
 .tour-content {
-    margin-top: 12%;
+    margin-top: 5%;
     width: 45%;
     display: inline-block;
     letter-spacing: 1px;
@@ -332,7 +361,7 @@ transition: 1s ease;
     border: 1px solid #e0f0e3;
     width: 250px;
     opacity: 0.8;
-    height: 300px;
+    height: 320px;
     margin-left: 3%;
     border-radius: 10px;
     transition: 1s ease;
@@ -366,11 +395,11 @@ transition: 1s ease;
     background-size: cover;
     background-position: center;
     margin-top: 15%;
+    padding: 10px;
     clip-path: polygon(42% 16%, 100% 0, 99% 100%, 0 100%, 0 29%);
 }
-.box-title h5
-{
-    padding-top: 10%;
+.box-title h5 {
+    padding-top: 2%;
     font-size: 20px;
     color: gray;
     text-transform: uppercase;
@@ -378,17 +407,16 @@ transition: 1s ease;
 }
 .box-desc
 {
-    padding:15px;
     color: gray;
-    line-height: 15px;
-    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 14px;
 }
 .packages
 {
     margin-top: 10%;
 }
-.tour-box
-{
+.tour-box {
     transition: 1s ease;
     margin-left: 35px;
     margin-top: 5%;
@@ -396,9 +424,8 @@ transition: 1s ease;
     position: relative;
     display: inline-block;
     border: 1px solid #f6f6f6;
-    box-shadow: grey;
     width: 300px;
-    height: 650px;
+    height: 750px;
 }
 .tour-btn
 {
@@ -442,20 +469,20 @@ transition: 1s ease;
 }
 /* one item  */
 .tour-item {
-    background-image: linear-gradient(to right bottom,rgba(240, 165, 13,0.5) ,rgba(240, 165, 13,0.5)) ,url(../images/dead-sea.jpg);
+    background-image: linear-gradient(to right bottom,rgba(240, 165, 13,0.5) ,rgba(240, 165, 13,0.5)) ,url(../images/zarqa.jpg);
     background-size: cover;
     height: 40vh;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
 }
 
 .tour-item2{
-    background-image: linear-gradient(to right bottom,rgb(0,52,0,0.5) ,rgb(0,205,0,0.5)) ,url(../images/forest.jpeg);
+    background-image: linear-gradient(to right bottom,rgb(0,52,0,0.5) ,rgb(0,205,0,0.5)) ,url(../images/aqaba.jpg);
     background-size: cover;
     height: 40vh;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
 }
 .tour-item3{
-    background-image: linear-gradient(to right bottom,rgba(77, 77, 255, 0.5) ,rgb(0,0,179,0.5)) ,url(../images/snow.jpeg);
+    background-image: linear-gradient(to right bottom,rgba(77, 77, 255, 0.5) ,rgb(0,0,179,0.5)) ,url(../images/wadi-rum.jpg);
     background-size: cover;
     height: 40vh;
     clip-path: polygon(0 0, 100% 0%, 100% 65%, 0 97%);
@@ -464,15 +491,13 @@ transition: 1s ease;
 {
     transform: scale(1.1);
 }
-.tour-title, .tour-title2,.tour-title3
-{
+.tour-title, .tour-title2, .tour-title3 {
     position: absolute;
-    top: 28%;
+    top: 18%;
     left: 50%;
     z-index: 1;
     text-align: center;
 }
-
 .tour-title h3,h4
 {
     color: #ffffff;
@@ -679,15 +704,24 @@ color: #ffffff;
     opacity: 0.9;
     height: 200px;
     position: relative;
-    left: 1%;
+    left: 0%;
     margin-bottom: 2%;
-    width: 89%;
+    width: 80%;
     transform: translate(0%,90px);
 }
 .user-testmonial p
 {
     margin-top: 7%;
-    width: 76%;
+    width: 80%;
+    letter-spacing: 10px;
+} 
+.border ul li
+{
+    letter-spacing: 3px;
+}
+.tour-box
+{
+    box-shadow: 5px 10px 8px 0px #888888;
 }
 @keyframes moveright
 {
@@ -729,6 +763,32 @@ color: #ffffff;
         transform: translateY(0);
     }
 }
+.container h1
+{
+    transition: 0.3s ease;
+};
+.form-btn
+{
+    width: 50%;
+}
+.container h1:hover
+{
+    transform: rotate(5deg);
+}
+@keyframes navbaranimate
+{
+    0% {
+        opacity: 0;
+        transform: scale(0.01)
+                   translateY(50px);
+      }
+ 
+      100% {
+        transform: scale(1);
+        height: 100%;
+        padding-bottom: 50;
+      }
+    }
 
 
 
