@@ -19,7 +19,7 @@ function infoUser (){
             var liE5 = document.createElement('li');
             liE5.classList.add("travel");
               ulE1.appendChild(liE5);
-               liE5.textContent = `Travel to : ${cusInfo[i].city}`;
+               liE5.textContent = ` ${cusInfo[i].city}`;
                
             var liE1 = document.createElement('li');
             ulE1.appendChild(liE1);
@@ -49,7 +49,8 @@ function infoUser (){
            var liE7 = document.createElement('li');
            liE7.classList.add("finalPrice");
            ulE1.appendChild(liE7);
-          liE7 .textContent = `Price after Discount% : ${cusInfo[i].finalPrice}JD `;
+           
+          liE7 .textContent = `Total: ${cusInfo[i].finalPrice}JD `;
    
     }
 }

@@ -37,4 +37,24 @@ no work can be secified for now
 ------------
 version 1.04
 9/3/2020
-loading....
+more steady progress is happening all over the website in all the pages 
+by all the team memberes wither its js html or css everyone is trying somthing and working on somthing helping each other 
+no work can be secified for now aswell 
+i know this is a copy paste but i really have nothing specific to add 
+-----------
+version 1.05  10/3/2020
+one day before submission day 
+they tention is getting high and everyone is on thier nerves waiting to explode ...
+is what i would have said if we didnt mange everything in a clean nice matter and everyone is doing the part that was assinged to him correctly without any trouble 
+
+were almost finished 
+strech goals were done by alaa/thaer/Qasem 
+work overflow chagned and enchanced by Sa'ed / Fatema 
+Final links between the pages should be done today 
+---------
+version 1.06 11/3/2020
+final day before submiting everything 
+its all going great and fine and without any trouble 
+some optimization is going on here and there around all the pages 
+thats it for this point 
+thank u for reading.
